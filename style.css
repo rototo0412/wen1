@@ -1,0 +1,42 @@
+a{
+  color:green;
+  text-decoration : none;
+}
+h1{
+  font-size : 50px;
+  text-align : center;
+  border-bottom:2px solid gray;
+  margin:0;
+  padding:20px;
+}
+#grid ol{
+border-right:2px solid gray;
+width:120px;
+margin:0;
+padding:20px;
+padding-left:45px;
+}
+body{
+  margin:0;
+}
+#grid{
+  display : grid;
+  grid-template-columns : 180px 1fr;
+}
+#article{
+padding-left:40px;
+}
+@media(max-width:600px){
+  #grid{
+    display : block;
+      }
+  h1{
+border-bottom:none;
+    }
+  #grid ol{
+  border-right:none;
+      }
+  #who{
+    text-align : center;
+  }
+}

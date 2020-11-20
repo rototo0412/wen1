@@ -17,13 +17,31 @@
     <li><a href="2.html">FOOD</a></li>
     <li><a href="3.html">CALLIGRAPHY</a></li>
     <br>
-    <input class="button" type="button" value="night" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';" >
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
 
-    <input class="button" type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';" >
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+      }
+  }  else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+      alist[i].style.color = 'blue';
+      i = i + 1;
+      }
+  }">
     </ol>
 
     <div id="article">
@@ -41,7 +59,7 @@
   src="https://www.youtube.com/embed/qFS6Aob28KI"
   frameborder="0" allow="accelerometer; autoplay;
   clipboard-write; encrypted-media; gyroscope;
-  picture-in-picture" allowfullscreen>
+  picture-in-picture" >
 </iframe>
 </p>
 로토의 최애 유튜버 중 한명인 일주어터 언니:)

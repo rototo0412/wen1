@@ -28,16 +28,13 @@ body{
 padding-left:40px;
 }
 @media(max-width:600px){
-  #grid{
+#grid{
     display : block;
       }
-  h1{
+h1{
 border-bottom:none;
     }
-  #grid ol{
+#grid ol{
   border-right:none;
       }
-  #who{
-    text-align : center;
-  }
 }
